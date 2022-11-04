@@ -268,15 +268,17 @@ padding: 50PX;
 .main-cont{
   background-image: url("img/netflixBg.jpg");
   background-size: cover;
-  height: 730px;
+  height: 100vh;
   width: 100%;
   position: fixed;
+  background-repeat: no-repeat;
+  isolation: isolate;
 }
 
 .backing{
   background: rgba(0, 0, 0, 0.4);
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent, 60%, rgba(0, 0, 0, 0.8));
-  height: 730px;
+  height: 100vh;
   color: #fff;
 }
 
@@ -287,11 +289,11 @@ padding: 50PX;
   left: 0;
   width: 100%;
   height: 100px;
-  z-index: 1;
+  z-index: -11;
   background: linear-gradient(to bottom, #000, transparent);
 }
 
-.main-cont::after{
+/* .main-cont::after{
   content: "";
   position: absolute;
   bottom: 0;
@@ -300,7 +302,7 @@ padding: 50PX;
   height: 100px;
   z-index: 1;
   background: linear-gradient(to bottom, #000, transparent);
-}
+} */
 
 
 .background{
